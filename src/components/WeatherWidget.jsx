@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Wind, Droplets, ThermometerSun } from "lucide-react";
-import { fetchWeather } from '../services/weatherApi';
+import fetchWeather from '../services/weatherApi';
 
 export default function WeatherWidget() {
     const [weather, setWeather] = useState(null);

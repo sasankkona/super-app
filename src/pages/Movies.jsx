@@ -1,9 +1,9 @@
 import { useState,useEffect } from "react";
-import { useStore } from "../store/useStore";
+import useStore from "../store/useStore";
 import { useNavigate } from "react-router-dom";
 import MovieCard from "../components/MovieCard";
 import MovieModal from "../components/MovieModal";
-import {fetchMByCategories} from "../services/movieApi";
+import fetchMByCategories from "../services/movieApi";
 
 function Movies() {
     const {categories} = useStore();
@@ -32,7 +32,7 @@ function Movies() {
         <div className="min-h-screen bg-darkBg text-white p-8 md:p-12">
             <div className="flex justify-between items-center mb-8">
                 <h2 className="nice font-cursive tex-4xl text-brandGreen">Super app</h2>
-                <img src="../assets/profile.png" alt="avatar" className="w-12 h-12 bg-white rounded-full cursor-pointer" onClick={()=>navigate("/dashboard")}/>
+                <img src="/assets/profile.png" alt="avatar" className="w-12 h-12 bg-white rounded-full cursor-pointer" onClick={()=>navigate("/dashboard")}/>
             </div>
             <h3 className="tex-xl text-white-200 font-bold mb-10">Entertainment according to your choices</h3>
             {categories.map((itemcategories)=>(

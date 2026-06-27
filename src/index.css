@@ -1,4 +1,26 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Single+Day&display=swap');
+
+@tailwind utilities;
+
+body {
+  background-color: #000000;
+  color: white;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #72db73;
+  border-radius: 4px;
+}
 
 :root {
   --text: #6b6375;

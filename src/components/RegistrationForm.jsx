@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useStore } from "../store/useStore";
+import useStore from "../store/useStore";
 
 const Register = () => {
   const setUser = useStore((state) => state.setUser);
@@ -105,8 +105,8 @@ const Register = () => {
       </div>
       <button type="submit" className="w-full bg-brandGreen text-black font-bold text-lg p-3 rounded-full mt-4 hover:bg-green-400 transition-colors">SIGN UP</button>
     </form>
-    <p style="color: #7c7c7c">By clicking on Sign up. you agree to Superapp <a href="#" style="color: #72db73">Terms and <br/>Conditions of Use</a></p>
-    <p style="color: #7c7c7c" className="mt-1">To learn more about how Superapp collects, uses, shares and <br/>projects your personal data please head superapp <a href="#" style="color: #72db73">Privacy <br/>Policy</a></p>
+    <p style={{color: '#7c7c7c'}}>By clicking on Sign up. you agree to Superapp <a href="#" style={{color: '#72db73'}}>Terms and <br/>Conditions of Use</a></p>
+    <p style={{color: '#7c7c7c'}} className="mt-1">To learn more about how Superapp collects, uses, shares and <br/>projects your personal data please head superapp <a href="#" style={{color: '#72db73'}}>Privacy <br/>Policy</a></p>
     </>
   );
 };

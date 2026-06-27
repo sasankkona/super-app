@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { fetchNews } from '../services/newsApi';
+import { useState, useEffect } from 'react';
+import fetchNews from '../services/newsApi';
 
 function NewsWidget() {
   const [news, setNews] = useState([]);

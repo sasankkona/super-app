@@ -1,19 +1,19 @@
 import {useState} from "react";
 import {useNavigate} from "react-router-dom";
-import { useStore } from "../store/useStore";
+import useStore from "../store/useStore";
 import CategoryCard from "../components/CategoryCard";
 import "../App.css"
 
 const CATE = [
-    {id:"Action", color: "#ff5209", image:"../assets/action.png"},
-    {id: "Drama", color: "#d7a4ff", image: "../assets/drama.png"},
-    {id: "Romance", color: "#148a08", image: "../assets/romance.png"},
-    {id: "Thriller", color: "#84c2ff", image: "../assets/thriller.png"},
-    {id: "Western", color: "#902500", image: "../assets/western.png"},
-    {id: "Horror", color: "#7358ff", image: "../assets/horror.png"},
-    {id: "Fantasy", color: "#ff4ade", image: "../assets/fantasy.png"},
-    {id: "Music", color: "#e61e32", image: "../assets/music.png"},
-    {id: "Fiction", color: "#6cd061", image: "../assets/fiction.png"}
+    {id:"Action", color: "#ff5209", image:"/assets/action.png"},
+    {id: "Drama", color: "#d7a4ff", image: "/assets/drama.png"},
+    {id: "Romance", color: "#148a08", image: "/assets/romance.png"},
+    {id: "Thriller", color: "#84c2ff", image: "/assets/thriller.png"},
+    {id: "Western", color: "#902500", image: "/assets/western.png"},
+    {id: "Horror", color: "#7358ff", image: "/assets/horror.png"},
+    {id: "Fantasy", color: "#ff4ade", image: "/assets/fantasy.png"},
+    {id: "Music", color: "#e61e32", image: "/assets/music.png"},
+    {id: "Fiction", color: "#6cd061", image: "/assets/fiction.png"}
 ];
 
 function Categories() {
